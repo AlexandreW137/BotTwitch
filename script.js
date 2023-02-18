@@ -1,6 +1,6 @@
 // Definir as variáveis necessárias
 const client_id = 'qzh02zung5shiuw24vxf7i6mm12g84';
-const redirect_uri = 'https://seu-usuario.github.io/sua-pagina/';
+const redirect_uri = 'https://alexandrew137.github.io/BotTwitch/';
 const response_type = 'code';
 const scope = 'clips:edit';
 
@@ -9,6 +9,11 @@ const auth_url = `https://id.twitch.tv/oauth2/authorize?client_id=${client_id}&r
 
 // Redirecionar o usuário para a URL de autorização
 window.location.replace(auth_url);
+
+function authorize() {
+  // Redirecionar o usuário para a URL de autorização
+  window.location.replace(auth_url);
+}
 
 // Obter o código de autorização após o redirecionamento
 const urlParams = new URLSearchParams(window.location.search);
