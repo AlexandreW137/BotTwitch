@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Minha página de redirecionamento da Twitch</title>
+</head>
+<body>
+
+	<h1>Redirecionando para o meu servidor...</h1>
+
+	<script>
+		// Extrair o código de autorização da URL de redirecionamento
+		const urlParams = new URLSearchParams(window.location.search);
+		const code = urlParams.get('code');
+
+		// Enviar o código de autorização de volta para o servidor
+		window.opener.postMessage({code: code}, window.location.origin);
+		window.close();
+	</script>
+
+</body>
+</html>
