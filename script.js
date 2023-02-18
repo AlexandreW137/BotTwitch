@@ -1,6 +1,6 @@
 // Definir as variáveis necessárias
 const client_id = 'qzh02zung5shiuw24vxf7i6mm12g84';
-const redirect_uri = 'https://alexandrew137.github.io/BotTwitch/';
+const redirect_uri = 'https://alexandrew137.github.io/BotTwitch/redirecionamento';
 const response_type = 'code';
 const scope = 'clips:edit';
 
