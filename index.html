@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Minha página de autorização da Twitch</title>
+	<title>Minha página de autorização da Twitch</title>
 </head>
 <body>
 
-  <h1>Autorização da Twitch</h1>
+	<h1>Autorização da Twitch</h1>
 
-  <button onclick="authorize()">Autorizar</button>
+	<a href="https://id.twitch.tv/oauth2/authorize?client_id=qzh02zung5shiuw24vxf7i6mm12g84&redirect_uri=https://alexandrew137.github.io/BotTwitch/&response_type=token&scope=clips:edit">Autorizar</a>
 
-  <script src="script.js"></script>
+	<script>
+		// Extrair o token de acesso da URL de redirecionamento
+		const accessToken = window.location.hash.substr(1).split('&')[0].split('=')[1];
+
+		// Exibir o token na página (somente para fins de teste)
+		document.write(`Token de acesso: ${accessToken}`);
+	</script>
 
 </body>
 </html>
